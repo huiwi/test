@@ -502,6 +502,7 @@ a.news:hover {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			border: medium double rgba(144, 144, 144, 0.25);
 			/* padding: 3em 3em 1em 3em; */
 		}
 			.image.fit table {
@@ -534,6 +535,24 @@ a.news:hover {
 					font-size: 12px;
 				}
 			}
+			@media (max-width: 600px) {
+			  .image.fit > div[style*="display: flex"] {
+			    flex-direction: column !important;
+			    width: 82% !important;
+			    gap: 6px !important;
+			    margin: 10px auto !important;
+			    padding-right: 0 !important;
+			  }
+			  .image.fit > div[style*="display: flex"] > div {
+			    flex-direction: column !important;
+			    gap: 6px !important;
+			    padding-right: 0 !important;
+			  }
+			  .image.fit span, .image.fit td, .image.fit th {
+			    font-size: 14px !important;
+			    word-break: break-all;
+			  }
+			}	
 
 /* List */
 

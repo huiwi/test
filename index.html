@@ -775,48 +775,107 @@
         <section id="main" class="wrapper">
             <div class="container">
                 <ul class="alt">
-                    <a download="Test Report #78251" href="./img/1FSTUDGRZBP4AY9EJKXN.png" title="Test Report #78251">
+                    <!-- <a download="Test Report #78251" href="./img/1FSTUDGRZBP4AY9EJKXN.png" title="Test Report #78251"> -->
+                    <script src="./html2canvas.min.js"></script>
+                    <a id="download-span-png" href="#" title="Test Report">
                         <span class="image fit">
                             <!-- <img src="./img/1FSTUDGRZBP4AY9EJKXN.png" alt="Test report #78251" title="Click to download"
                                 style="border: medium double rgba(144, 144, 144, 0.25)"> -->
-                            <img src="./11.png" alt="Test report #78251" title="Click to download"
-                                style="border: medium double rgba(144, 144, 144, 0.25);border-bottom: 0;">
-                            <div style="border-left: medium double rgba(144, 144, 144, 0.25);padding-top: 5px;
-				border-right: medium double rgba(144, 144, 144, 0.25);">
-                                <table>
-                                <tr>
-                                    <td>Drostanolone Enanthate</td>
-                                    <td id="mg-value"></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
+                            <img src="./p1.png" alt="">
+                            <!-- <img src="./11.png" alt="Test report #78251" title="Click to download"> -->
+
+                            <div style="display: flex;width: 82%;margin: 20px auto;gap: 10px;">
+                                <div style="flex: 1;display: flex;gap: 10px;padding-right: 50px;">
+                                    <span style="flex: .5;">Task Number</span>
+                                    <span style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;"
+                                        id="v1"></span>
+                                </div>
+                                <div style="flex: 1;display: flex;gap: 10px;">
+                                    <span>Testing ordered&nbsp;></span>
+                                    <span style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;">04
+                                        SEP '25</span>
+                                </div>
                             </div>
-                            <img src="./22.png" alt="Test report #78251" title="Click to download"
-                                style="border: medium double rgba(144, 144, 144, 0.25);border-top: 0;">
+                            <div style="display: flex;width: 82%;margin: 20px auto;gap: 10px;">
+                                <div style="flex: 1;display: flex;gap: 10px;padding-right: 50px;">
+                                    <span style="flex: .5;"></span>
+                                    <span style="color: #070707;flex: 1;"></span>
+                                </div>
+                                <div style="flex: 1;display: flex;gap: 10px;">
+                                    <span>Sample received&nbsp;></span>
+                                    <span style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;">10
+                                        SEP '25</span>
+                                </div>
+                            </div>
+
+                            <div style="flex: 1;display: flex;gap: 25px;width: 82%;margin: 20px auto;">
+                                <span style="min-width: 110px;">Client&nbsp;</span>
+                                <span
+                                    style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;">taokai10@gmail.com</span>
+                            </div>
+                            <div style="flex: 1;display: flex;gap: 30px;width: 82%;margin: 20px auto;">
+                                <span style="min-width: 110px;">Sample&nbsp;</span>
+                                <span style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;"
+                                    id="v2"></span>
+                            </div>
+                            <div style="flex: 1;display: flex;gap: 30px;width: 82%;margin: 20px auto;">
+                                <span style="min-width: 110px;">Manufacturer&nbsp;</span>
+                                <span style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;">HD LABS
+                                    Platinum Series</span>
+                            </div>
+                            <div style="flex: 1;display: flex;gap: 30px;width: 82%;margin: 20px auto;">
+                                <span style="min-width: 110px;">Batch&nbsp;</span>
+                                <span
+                                    style="background-color: #F3F2F3;color: #070707;flex: 1;padding: 0 5px;">Unknown</span>
+                            </div>
+
+                            <img src="./p2.png" alt="">
+
+                            <div style="padding-top: 5px;">
+                                <table>
+                                    <tr>
+                                        <td>Drostanolone Enanthate</td>
+                                        <td id="v3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <img src="./p3.png">
+                            <div style="width: 82%;margin: 20px auto;background-color: #F3F2F3;color: #070707;text-align: center;"
+                                id="v4"></div>
                         </span>
                     </a>
+                    <script>
+                        document.getElementById('download-span-png').addEventListener('click', function (e) {
+                            e.preventDefault();
+                            var span = this.querySelector('.image.fit');
+                            html2canvas(span).then(function (canvas) {
+                                var link = document.createElement('a');
+                                link.download = 'Test_Report.png';
+                                link.href = canvas.toDataURL('image/png');
+                                link.click();
+                            });
+                        });
+                    </script>
                     <img style="border: medium double rgba(144, 144, 144, 0.25); transform: rotate(0deg);"
-                        data-rotation="0" class="rotatable-image"
-                        src="https://jas.janoshik.com/images/a251b0f7fe369122626b.jpg" width="100%"
-                        title="Click to download">
+                        data-rotation="0" class="rotatable-image" src="./33.jpg" width="100%" title="Click to download">
                     <ul class="actions" style="text-align: center">
-                        <li style="float: left; margin-top: 2em; margin-bottom: 2em"><a
-                                download="Test Report #78251.png" href="./img/1FSTUDGRZBP4AY9EJKXN.png"
-                                class="button icon fa-download">Download test report</a></li>
+                        <li style="float: left; margin-top: 2em; margin-bottom: 2em"><a download="Test Report.png"
+                                href="./img/1FSTUDGRZBP4AY9EJKXN.png" class="button icon fa-download">Download test
+                                report</a></li>
                         <li style="border-top: none; margin-top: 2em">
                             <div class="button icon fa-download disabled no_clicky"
                                 title="This service had not been purchased">Download raw data</div>
                         </li>
                         <li style="border-top: none; float: right; margin-top: 2em"><a
-                                download="Images for Test Report #78251.zip"
-                                href="./images/index.php?file=78251&amp;token=DX64GPDCKMXJ"
+                                download="Images for Test Report.jpg" href="./33.jpg"
                                 class="button icon fa-download">Download pictures</a></li>
                     </ul>
                 </ul>
@@ -825,13 +884,20 @@
 
         <script>
             window.onload = function () {
-                var mgValue = document.getElementById('mg-value'); 
-                var mgparam = (new URL(document.location)).searchParams.get("mg");
-                if (mgparam) {
-                    mgValue.innerText = mgparam + " mg/ml";
-                }
-                else {
-                    mgValue.innerText = "";
+                var v1 = document.getElementById('v1');
+                var v2 = document.getElementById('v2');
+                var v3 = document.getElementById('v3');
+                var v4 = document.getElementById('v4');
+                const search = window.location.search.startsWith('?') ? window.location.search.slice(1) : window.location.search;
+                const match = search.match(/^(\d+)-(.+)_([A-Z0-9]+)$/);
+                if (match) {
+                    const id = match[1]; // 78251
+                    const name = match[2].replace(/_/g, ' '); // Mast E 200mg/ml
+                    const code = match[3]; // DX64GPDCKMXJ
+                    v1.innerText = '#' + id;
+                    v2.innerText = name;
+                    v3.innerText = name.match(/(\d+mg\/?ml)/i)[1].replace(/mgml/i, ' mg/ml');
+                    v4.innerText = code
                 }
                 var images = document.getElementsByClassName('rotatable-image');
                 for (var i = 0; i < images.length; i++) {
